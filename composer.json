@@ -1,0 +1,13 @@
+{
+    "name": "phil/phinfo",
+    "type": "project",
+    "require": {
+        "ramsey/uuid": "^3.8"
+    },
+    "authors": [
+        {
+            "name": "Phil Dier",
+            "email": "phil@dier.us"
+        }
+    ]
+}
