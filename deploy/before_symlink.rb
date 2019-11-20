@@ -1,4 +1,4 @@
-log "layer name #{layer_name}"
+log "layer name #{layer_name()}"
 
 bash "run composer install" do
 	cwd release_path
