@@ -1,6 +1,5 @@
 log "layer name #{layer_name()}"
-puts "new_resource:"
-puts new_resource
+puts "new_resource: #{new_resource.name}"
 
 bash "run composer install" do
 	cwd release_path
@@ -9,6 +8,6 @@ bash "run composer install" do
 	EOH
 end
 
-twincities_domains "philtest" do
+twincities_domains new_resource.name do
 	aliases ["philtest.info","philtest.io"]
 end
