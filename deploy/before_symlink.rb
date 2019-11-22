@@ -1,5 +1,6 @@
 log "layer name #{layer_name()}"
-puts "new_resource #{new_resource}"
+puts "new_resource:"
+puts new_resource
 
 bash "run composer install" do
 	cwd release_path
