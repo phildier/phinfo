@@ -7,7 +7,3 @@ bash "run composer install" do
 	composer install --no-dev --no-ansi --no-interaction
 	EOH
 end
-
-twincities_domains new_resource.name do
-	aliases ["philtest.info","philtest.io"]
-end
