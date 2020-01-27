@@ -8,8 +8,9 @@ bash "run composer install" do
 	EOH
 end
 
-opsworks_util_cron "test" do
-	servers ["imagex-dev1"]
-	command "touch /tmp/cron-running"
-	minute "*"
-end
+#opsworks_util_cron "test" do
+#	action :create
+#	servers ["imagex-dev1"]
+#	command "touch /tmp/cron-running"
+#	minute "*"
+#end
