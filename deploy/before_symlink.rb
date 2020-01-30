@@ -8,9 +8,15 @@ bash "run composer install" do
 	EOH
 end
 
-#opsworks_util_cron "test" do
-#	action :create
-#	servers ["imagex-dev1"]
-#	command "touch /tmp/cron-running"
-#	minute "*"
-#end
+bash "run npm install" do
+	user "imagex"
+	group "imagex"
+	environment({
+		"HOME" => "/home/imagex"
+	})
+	code <<-EOH
+	source .nvm/nvm.sh
+	nvm use 10.15.0
+	npm install
+	EOH
+end
