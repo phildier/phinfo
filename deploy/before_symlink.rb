@@ -9,12 +9,12 @@ bash "run composer install" do
 end
 
 bash "run npm install" do
-	cwd "/home/imagex"
+	cwd release_path
 	environment({
 		"HOME" => "/home/imagex"
 	})
 	code <<-EOH
-	source .nvm/nvm.sh
+	source #{user_home}/.nvm/nvm.sh
 	nvm use 10.15.0
 	npm install
 	EOH
