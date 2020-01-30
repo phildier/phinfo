@@ -9,8 +9,6 @@ bash "run composer install" do
 end
 
 bash "run npm install" do
-	user "imagex"
-	group "imagex"
 	cwd "/home/imagex"
 	environment({
 		"HOME" => "/home/imagex"
