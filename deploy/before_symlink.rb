@@ -14,7 +14,7 @@ bash "run npm install" do
 		"HOME" => "/home/imagex"
 	})
 	code <<-EOH
-	source #{user_home}/.nvm/nvm.sh
+	source /home/imagex/.nvm/nvm.sh
 	nvm use 10.15.0
 	npm install
 	EOH
