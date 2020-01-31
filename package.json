@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/phildier/phinfo#readme",
   "dependencies": {
-    "lpad": "^2.0.1"
+    "lpad": "^2.0.1",
+    "node-sass": "^4.13.1"
   }
 }
